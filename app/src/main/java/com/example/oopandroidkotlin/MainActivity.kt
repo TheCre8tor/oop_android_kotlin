@@ -8,7 +8,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val driver = Driver("Michael Dawn")
+        val driver = Driver( "Michael Dawn", 34)
         driver.showDetails()
     }
 }
