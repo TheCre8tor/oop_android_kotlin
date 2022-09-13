@@ -1,8 +1,16 @@
 package com.example.oopandroidkotlin
 
-class Car(name: String) {
-    constructor(name: String, age: Int) : this(name) {}
-}
+import android.util.Log
 
-val invoke = Car("Alexander")
-val call = Car("Alexander", 27)
+class Car {
+    var maxSpeed = 50
+
+    fun start() {
+        Log.i("MyTag","Car is starting...")
+    }
+
+    fun showDetails() {
+        Log.i("MyTag", "name of the driver is Lukamba")
+        Log.i("MyTag", "maximum speed: $maxSpeed")
+    }
+}
